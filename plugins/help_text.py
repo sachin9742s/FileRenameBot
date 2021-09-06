@@ -102,12 +102,12 @@ async def start_me(bot, update):
                         InlineKeyboardButton("Help", callback_data = "ghelp")
                 ],
                 [
-                    InlineKeyboardButton('Support Channel', url='https://t.me/Mai_bOTs'),
-                    InlineKeyboardButton('Feedback', url='https://t.me/No_OnE_Kn0wS_Me')
+                    InlineKeyboardButton('Support Channel', url='https://t.me/ROCKHDMOVIES2021'),
+                    InlineKeyboardButton('KR BOT Channel', url='https://t.me/KR_Rename_Channel')
                 ],
                 [
-                    InlineKeyboardButton('Other Bots', url='https://t.me/Mai_bOTs/17'),
-                    InlineKeyboardButton('Source', url='https://github.com/No-OnE-Kn0wS-Me/FileRenameBot')
+                    InlineKeyboardButton('Other Movies', url='https://t.me/GD_FILMCLUB'),
+                    InlineKeyboardButton('UPDATE GROUP', url='https://t.me/KicchaRequest')
                 ]
             ]
         ),
