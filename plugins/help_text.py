@@ -99,15 +99,15 @@ async def start_me(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                        InlineKeyboardButton("Help", callback_data = "ghelp")
+                        InlineKeyboardButton("≪ ℍ𝔼𝕃ℙ ≫", callback_data = "ghelp")
                 ],
                 [
-                    InlineKeyboardButton('Support Channel', url='https://t.me/ROCKHDMOVIES2021'),
-                    InlineKeyboardButton('KR BOT Channel', url='https://t.me/KR_Rename_Channel')
+                    InlineKeyboardButton('📄 𝕊𝕌ℙℙ𝕆ℝ𝕋 ℂℍ𝔸ℕℕ𝔼𝕃 📄', url='https://t.me/ROCKHDMOVIES2021'),
+                    InlineKeyboardButton('🤖 𝕂ℝ 𝔹𝕆𝕋 ℂℍ𝔸ℕℕ𝔼𝕃 🤖', url='https://t.me/KR_Rename_Channel')
                 ],
                 [
-                    InlineKeyboardButton('Other Movies', url='https://t.me/GD_FILMCLUB'),
-                    InlineKeyboardButton('UPDATE GROUP', url='https://t.me/KicchaRequest')
+                    InlineKeyboardButton('🗂️ 𝕌ℙ𝔻𝔸𝕋𝔼 𝕄𝕆𝕍𝕀𝔼𝕊 🗂️', url='https://t.me/GD_FILMCLUB'),
+                    InlineKeyboardButton('💬 𝕊𝕌ℙℙ𝕆ℝ𝕋 𝔾ℝ𝕆𝕌ℙ 💬', url='https://t.me/KicchaRequest')
                 ]
             ]
         ),
