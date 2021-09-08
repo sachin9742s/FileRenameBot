@@ -52,6 +52,9 @@ async def help_user(bot, update):
                 text="**Please Join My Update Channel Before Using Me..**",
                 reply_markup=InlineKeyboardMarkup([
                     [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
+                ],
+                [
+                    [ InlineKeyboardButton("〠  𝐒𝐇𝐀𝐑𝐄 𝐀𝐍𝐃 𝐒𝐔𝐏𝐏𝐎𝐑𝐓 ➕", url="https://t.me/share/url?url=%20https://t.me/KicchaRequest")]
               ])
             )
             return
