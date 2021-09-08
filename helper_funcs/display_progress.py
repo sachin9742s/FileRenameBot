@@ -54,7 +54,8 @@ async def progress_for_pyrogram(
                 ]
             ]
         )
-    )       
+    )
+
              humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
