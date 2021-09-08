@@ -43,7 +43,19 @@ async def progress_for_pyrogram(
             round(percentage, 2))
 
         tmp = progress + "<b>✔𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍:</b>{0} \n<b>📁𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞:</b> {1}\n<b>🚀𝐒𝐩𝐞𝐞𝐝:</b> {2}/s\n<b>⌚️𝐄𝐓𝐀:</b> {3}\n".format(
-            humanbytes(current),
+            [
+                [
+                    InlineKeyboardButton('📝Rename', callback_data = "rnme"),
+                    InlineKeyboardButton('📂File To Video', callback_data = "f2v")
+                ],
+                [
+                    InlineKeyboardButton('🎞️Custom Thumbnail', callback_data = "cthumb"),
+                    InlineKeyboardButton('💬About', callback_data = "about")
+                ]
+            ]
+        )
+    )       
+             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
             # elapsed_time if elapsed_time != '' else "0 s",
@@ -67,7 +79,7 @@ def humanbytes(size):
         return ""
     power = 2**10
     n = 0
-    Dic_powerN = {0: ' ', 1: 'Ki', 2: 'Mi', 3: 'Gi', 4: 'Ti'}
+    Dic_powerN = {0: ' ', 1: 'K', 2: 'M', 3: 'G', 4: 'T'}
     while size > power:
         size /= power
         n += 1
