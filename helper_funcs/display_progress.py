@@ -37,19 +37,17 @@ async def progress_for_pyrogram(
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-       ╭────ᴜᴘʟᴏᴀᴅɪɴɢ </b> {2}%\n".format(
-            ''.join(["✫" for i in range(math.floor(percentage / 5))]),
-            ''.join(["✬" for i in range(20 - math.floor(percentage / 5))]),
+        progress = "╭────<b>ᴜᴘʟᴏᴀᴅɪɴɢ </b> {2}%\n".format(
+            ''.join(["▰" for i in range(math.floor(percentage / 5))]),
+            ''.join(["▱" for i in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2)) ──〄\n│\n╰─["[{0}{1}] \n <b>]─〄
 
-        tmp =╭──────〄\n│├<b>📤 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍:</b>{0}│\n├<b>📁 𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞:</b> {1}│ \n├<b>🚀𝐒𝐩𝐞𝐞𝐝:</b> {2}/s│\n├<b>⏱️ ᴛɪᴍᴇ ʟᴇғᴛ :</b> {3}\n".format(
-             humanbytes(current),
+        tmp = progress + "╭──────〄\n│\n├<b>📤 𝙲𝚘𝚖𝚙𝚕𝚎𝚝𝚎𝚍:</b>{0}│\n├<b>📁 𝐓𝐨𝐭𝐚𝐥 𝐅𝐢𝐥𝐞 𝐒𝐢𝐳𝐞:</b> {1}│\n├<b>🚀𝐒𝐩𝐞𝐞𝐝:</b> {2}/s│\n├<b>⏱️ ᴛɪᴍᴇ ʟᴇғᴛ :</b> {3}\n".format(
+            humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
             # elapsed_time if elapsed_time != '' else "0 s",
-            estimated_total_time if estimated_total_time != '' else "0 s"
-        )│\n├  © @KicchaRequest  💞💞│\n╰──────〄\n\n📤 Uploading to Local  host 🏫 
- Be Patient, its Freaken Slow🙇🙇🙇
+            estimated_total_time if estimated_total_time != '' else "0 s"│\n├  © @KicchaRequest  💞💞│\n╰──────〄
         )
         try:
             await message.edit(
